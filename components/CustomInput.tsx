@@ -3,10 +3,10 @@ import { FormField, FormLabel, FormControl, FormMessage } from './ui/form'
 import { Input } from './ui/input'
 import { Control, FieldPath } from 'react-hook-form'
 import { z } from 'zod'
-import { AuthFormSchema } from '@/lib/utils'
+import { authFormSchema } from '@/lib/utils'
 
 
-const formSchema = AuthFormSchema('sign-up');
+const formSchema = authFormSchema('sign-up');
 
 interface CustomInput {
     control: Control<z.infer<typeof formSchema>>,
